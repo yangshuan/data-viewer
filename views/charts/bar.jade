@@ -1,0 +1,17 @@
+extends ../layout
+
+block stylesheet
+    link(rel='stylesheet', href='/stylesheets/chart.css')
+
+block content
+    .container
+        .row.title
+            h1#title
+        .row
+            .col-md-10.canvas-holder
+                canvas.bar(width='1000', height='500')
+            .col-md-2.illustrate
+
+block script
+    script(src='/components/Chart.js/Chart.min.js')
+    script(src='/javascripts/charts/bar.js')

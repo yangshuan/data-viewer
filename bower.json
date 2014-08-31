@@ -1,0 +1,28 @@
+{
+  "name": "data-sqlserver",
+  "version": "0.0.0",
+  "homepage": "https://github.com/yangshuan/data-sqlserver",
+  "description": "Simple data management for SQL Server",
+  "main": "app.js",
+  "keywords": [
+    "data",
+    "sqlserver"
+  ],
+  "authors": [
+    "Karl Yang"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public/components",
+    "test",
+    "tests",
+    "bower_components"
+  ],
+  "dependencies": {
+    "Chart.js": "~0.2.0",
+    "bootstrap": "~3.2.0"
+  }
+}

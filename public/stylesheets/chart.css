@@ -1,0 +1,24 @@
+.canvas-holder {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.title {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.illustrate {
+    padding-left: 10px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.bar-legend > li {
+    list-style-type: none;
+}
+
+.bar-legend > li > span {
+    display: inline-block;
+    width: 20px;
+}

@@ -1,0 +1,36 @@
+{
+  "name": "data-sqlserver",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "express": "~4.2.0",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "jade": "~1.3.0"
+  },
+  "description": "Simple data management for SQL Server",
+  "main": "app.js",
+  "devDependencies": {
+    "mocha": "^1.21.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yangshuan/data-sqlserver.git"
+  },
+  "keywords": [
+    "data",
+    "sqlserver"
+  ],
+  "author": "Karl Yang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yangshuan/data-sqlserver/issues"
+  },
+  "homepage": "https://github.com/yangshuan/data-sqlserver"
+}
