@@ -5,13 +5,18 @@ block stylesheet
 
 block content
     .container
-        .row.title
-            h1#title
         .row
-            .col-md-10.canvas-holder
-                canvas.bar(width='1000', height='500')
-            .col-md-2.illustrate
+            .col-md-10
+                canvas#net(width='1000', height='500')
+            .col-md-10
+                canvas#off(width='1000', height='500')
+        .row
+            .col-md-10
+                canvas#unmeasured(width='1000', height='500')
+            .col-md-10
+                canvas#total(width='1000', height='500')
 
 block script
-    script(src='/components/Chart.js/Chart.min.js')
+    script(src='/components/Chart.js/src/Chart.Core.js')
+    script(src='/components/Chart.js/src/Chart.Bar.js')
     script(src='/javascripts/charts/bar.js')
