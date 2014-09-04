@@ -46,7 +46,8 @@ $(document).ready(function() {
         titleText: 'Hours Deviation - Net',
         showLegend: true,
         legendPosition: "right",
-        legendBoard: true
+        legendBoard: true,
+        showNegative: true
     });
 
     var offCtx = $('#off').get(0).getContext('2d');
@@ -190,20 +191,20 @@ $(document).ready(function() {
         ],
         datasets: [
             {
-                label: 'Unmeasured Hours',
-                fillColor: '#E98F5B',
-                highlightFill: '#E98F5B',
-                data: [387.2, 373.3, 387.9, 350.4, 386.3, 5, 360.2, 370, 299, 380, 373, 41.8]
-            },
-            {
                 label: 'Measured Hours',
                 fillColor: '#527EA9',
                 highlightFill: '#527EA9',
                 data: [210, 210, 230, 205, 192, 10, 185, 187, 190, 200, 175, 160]
+            },
+            {
+                label: 'Unmeasured Hours',
+                fillColor: '#E98F5B',
+                highlightFill: '#E98F5B',
+                data: [387.2, 373.3, 387.9, 350.4, 386.3, 5, 360.2, 370, 299, 380, 373, 41.8]
             }
         ]
     };
-    var totalChart = new Chart(totalCtx).Bar(totalData, {
+    var totalChart = new Chart(totalCtx).Stackedbar(totalData, {
         barShowStroke : false,
         scaleOverride: true,
         scaleSteps: 7,

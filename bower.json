@@ -22,7 +22,6 @@
     "bower_components"
   ],
   "dependencies": {
-    "Chart.js": "~0.2.0",
     "bootstrap": "~3.2.0"
   }
 }
