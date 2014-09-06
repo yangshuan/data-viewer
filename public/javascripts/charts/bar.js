@@ -205,6 +205,7 @@ $(document).ready(function() {
         ]
     };
     var totalChart = new Chart(totalCtx).Stackedbar(totalData, {
+        animationEasing: "easeOutQuart",
         barShowStroke : false,
         scaleOverride: true,
         scaleSteps: 7,
